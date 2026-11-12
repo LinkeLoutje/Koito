@@ -53,7 +53,7 @@ type SubmitListenOpts struct {
 	TrackTitle         string
 	RecordingMbzID     uuid.UUID
 	Duration           int32 // in seconds
-	DurationPlayed     int32 // in seconds
+	DurationPlayed     int32 // time actually played in seconds. 0 = Unknow following the current convention of the project.
 	ReleaseTitle       string
 	ReleaseMbzID       uuid.UUID
 	ReleaseGroupMbzID  uuid.UUID
